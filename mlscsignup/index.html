@@ -5,39 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log-in</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.8.5/build/spline-viewer.js"></script>
 </head>
-<body class="active">
-    <div class="floating">
-      <div class="thickness"></div>
-      <div class="thickness"></div>
-      <div class="thickness"></div>
-      <div class="card_body">
-        <div class="eye svg"></div>
-        <div class="logi svg"></div>
-        <div class="mlsclogo svg"></div>
-        <div class="info text">
-            <div class="login-box">
-            <form id="input">
-                  <div class="user-box">
-                    <input type="text" name="" required="">
-                    <label>Username</label>
-                  </div>
-                  <div class="user-box">
-                    <input type="password" name="" required="">
-                    <label>Password</label>
-                  </div>
-                </form>
-              </div>
-          <div class="submit text">
-              <input type="submit" value="Submit" id="submit" form="input">
-          </div>
+<body>
+    <!-- Parent container for layout -->
+    <div style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100vw; position: relative;">
+        <!-- Spline viewer container -->
+        <div style="position: absolute; left: -62px; top: 0; height: 100%; width: 70%;">
+            <spline-viewer url="https://prod.spline.design/Qw81Io5Uimr2mRZz/scene.splinecode"style="width: 100%; height: 100%; margin-right: 190px;"></spline-viewer>
         </div>
-        <div class="valid text"></div>
-        <div class="sign svg"></div>
-        <div class="icon2 svg"></div>
-      </div>
+        <!-- Existing content centered -->
+        <div class="ring" style="z-index: 1;">
+            <i style="--clr:#091833;"></i>
+            <i style="--clr:#711c91;"></i>
+            <i style="--clr:#0abdc6;"></i>
+            <div class="login">
+                <h2>Login</h2>
+                <div class="inputaccount">
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="inputaccount">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="inputaccount">
+                    <input type="submit" value="Sign in" id="submit">
+                </div>
+                <div class="links">
+                    <a href="KAHI TO JAYEGA">Forgot Password?</a>
+                    <a href="YE BHI">Sign-up</a>
+                </div>
+              </div>
+            </div>
+            <div style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); writing-mode: vertical-rl; text-align: right; font-size: 1.5rem; color: #fff;">
+             
+              <br>“The Key Lies Within”
+           
+            
+          </div>
     </div>
-        
     <script src="script.js"></script>
 </body>
 </html>
