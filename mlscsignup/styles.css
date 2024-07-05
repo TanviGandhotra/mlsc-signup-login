@@ -20,7 +20,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #121212;
+  background: black;
   width: 100%;
   overflow: hidden;
 }
@@ -113,6 +113,10 @@ body {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.75);
 }
+spline-viewer {
+  width: 50%;
+  height: 80%; 
+  margin-right: 130px;}
 
 .links {
   position: relative;
@@ -145,11 +149,12 @@ body {
   }
 }
 
+
 @keyframes animate2 {
   0% {
     transform: rotate(360deg);
   }
   100% {
     transform: rotate(0deg);
-  }
+  }
 }
