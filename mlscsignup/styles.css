@@ -8,21 +8,8 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Orbitron", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
 }
 
-html,body{
-  height: 100%;
-  width: 100%;
 html,body{
   height: 100%;
   width: 100%;
@@ -58,14 +45,8 @@ body {
 .ring i:nth-child(1) {
   border-radius: 40% 60% 60% 40% / 50% 70% 35% 50%;;
   animation: animate 6s linear infinite;
-.ring i:nth-child(1) {
-  border-radius: 40% 60% 60% 40% / 50% 70% 35% 50%;;
-  animation: animate 6s linear infinite;
 }
 
-.ring i:nth-child(2) {
-  border-radius: 50% 70% 35% 50%/40% 60% 60% 40% ;
-  animation: animate 4s linear infinite;
 .ring i:nth-child(2) {
   border-radius: 50% 70% 35% 50%/40% 60% 60% 40% ;
   animation: animate 4s linear infinite;
@@ -74,24 +55,15 @@ body {
 .ring i:nth-child(3) {
   border-radius: 50% 70% 35% 50%/40% 60% 60% 40%  ;
   animation: animate2 10s linear infinite;
-.ring i:nth-child(3) {
-  border-radius: 50% 70% 35% 50%/40% 60% 60% 40%  ;
-  animation: animate2 10s linear infinite;
 }
 
 .ring:hover i {
   border: 6px solid var(--clr);
   filter: drop-shadow(0 0 20px var(--clr));
-.ring:hover i {
-  border: 6px solid var(--clr);
-  filter: drop-shadow(0 0 20px var(--clr));
 }
 
-.login {
 .login {
   position: absolute;
-  width: 300px;
-  height: 100%;
   width: 300px;
   height: 100%;
   display: flex;
@@ -99,24 +71,11 @@ body {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
 }
 
-.login h2 {
-  font-size: 2em;
 .login h2 {
   font-size: 2em;
   color: #fff;
-}
-
-.inputaccount {
-  position: relative;
-  width: 100%;
-}
-
-.inputaccount input {
 }
 
 .inputaccount {
@@ -135,24 +94,8 @@ body {
   color: #fff;
   box-shadow: none;
   outline: none;
-  width: 100%;
-  padding: 12px 20px;
-  background: transparent;
-  border: 2px solid #fff;
-  border-radius: 40px;
-  font-size: 1.2em;
-  color: #fff;
-  box-shadow: none;
-  outline: none;
 }
 
-#submit {
-  width: 100%;
-  background: #0078ff;
-  background: linear-gradient(45deg, #ea00d9, #133e7c);
-  border: none;
-  cursor: pointer;
-  transition: background 1s ease-in-out;
 #submit {
   width: 100%;
   background: #0078ff;
@@ -164,13 +107,8 @@ body {
 
 #submit:hover {
   background: linear-gradient(120deg, #ea00d9, #133e7c);
-#submit:hover {
-  background: linear-gradient(120deg, #ea00d9, #133e7c);
 }
 
-.inputaccount input::placeholder {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.75);
 .inputaccount input::placeholder {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.75);
@@ -192,24 +130,10 @@ spline-viewer {
 
 .links a {
   font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  font-weight: 400;
-}
-
-.links a {
-  font-weight: 400;
   color: #fff;
   text-decoration: none;
-  text-decoration: none;
 }
 
-.links a:hover{
-  background: linear-gradient(45deg, #ea00d9, #133e7c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 .links a:hover{
   background: linear-gradient(45deg, #ea00d9, #133e7c);
   -webkit-background-clip: text;
@@ -232,5 +156,5 @@ spline-viewer {
   }
   100% {
     transform: rotate(0deg);
-  }
+  }
 }
